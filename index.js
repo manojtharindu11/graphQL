@@ -2,7 +2,7 @@ import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 
 // Database
-import db from "./db.js";
+import db from "./_db.js";
 
 // Types
 import { typeDefs } from "./schema.js";

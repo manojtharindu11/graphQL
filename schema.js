@@ -18,4 +18,5 @@ export const typeDefs = `#graphql
         reviews: [Review],
         games: [Game],
         authors: [Author]
+    }
 `;
