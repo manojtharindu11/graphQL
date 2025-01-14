@@ -29,7 +29,7 @@ const resolvers = {
             return db.authors.find(author => author.id === args.id);
         }
     },
-    Game() {
+    Game: {
         reviews(parent) {
             return db.reviews.filter((review) => review.game_id === parent.id);
         }
