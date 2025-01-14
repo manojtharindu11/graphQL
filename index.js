@@ -28,6 +28,11 @@ const resolvers = {
         author(_,args) {
             return db.authors.find(author => author.id === args.id);
         }
+    },
+    Game() {
+        reviews(parent) {
+            return db.reviews.filter((review) => review.game_id === parent.id);
+        }
     }
 }
 
