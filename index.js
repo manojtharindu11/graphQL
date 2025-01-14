@@ -41,10 +41,10 @@ const resolvers = {
     },
     Review: {
         author(parent) {
-            db.authors.find((author) => author.id === parent.author_id);
+            return db.authors.find((author) => author.id === parent.author_id);
         },
         game(parent) {
-            db.games.find((game) => game.id === parent.game_id);
+            return db.games.find((game) => game.id === parent.game_id);
         }
     }
 }
