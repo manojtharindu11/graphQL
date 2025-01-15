@@ -60,7 +60,7 @@ const resolvers = {
       return db.games;
     },
     updateGame(_, args) {
-      db.games.map((game) => {
+      db.games = db.games.map((game) => {
         if (game.id === args.id) {
           return {
             ...game,
